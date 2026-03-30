@@ -1,10 +1,10 @@
 ## O que é Javascript?
 JavaScript é uma linguagem de programação de alto nível, interpretada e dinâmica, essencial para criar interatividade e dinamismo em sites.
 
-#Para que serve?
+## Para que serve?
 Serve para dar comportamento e inteligência a sistemas digitais. Enquanto outras linguagens definem o que um site é ou como ele parece, o JavaScript define o que ele faz.
 
-#Como ele complementa HTML e CSS?
+##Como ele complementa HTML e CSS?
 Complementa HTML (estrutura) e CSS (estilo) adicionando interatividade, dinamismo e comportamento às páginas web.
 
 # 📘 Manual: JavaScript Fundamental
