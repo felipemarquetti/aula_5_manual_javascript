@@ -1,50 +1,98 @@
-## O que é Javascript?
-JavaScript é uma linguagem de programação de alto nível, interpretada e dinâmica, essencial para criar interatividade e dinamismo em sites.
+# 🚀 Manual Prático de JavaScript: Do Zero à Manipulação do DOM
 
-## Para que serve?
-Serve para dar comportamento e inteligência a sistemas digitais. Enquanto outras linguagens definem o que um site é ou como ele parece, o JavaScript define o que ele faz.
+Bem-vindo ao meu repositório de estudos! Este guia foi criado para documentar meu aprendizado sobre JavaScript, explicando desde conceitos básicos até a interação com o navegador.
 
-##Como ele complementa HTML e CSS?
-Complementa HTML (estrutura) e CSS (estilo) adicionando interatividade, dinamismo e comportamento às páginas web.
+---
 
-# 📘 Manual: JavaScript Fundamental
+## 📑 Sumário
+1. [Introdução](#-introducao)
+2. [Formas de Uso](#-formas-de-uso-html)
+3. [Variáveis e Escopo](#-variaveis-e-escopo)
+4. [Operadores e Comparações](#-operadores-e-comparacoes)
+5. [Estruturas Condicionais](#-estruturas-condicionais)
+6. [Estruturas de Repetição](#-estruturas-repeticao)
+7. [Funções](#-funcoes)
+8. [Manipulação do DOM](#-manipulacao-dom)
 
-## 1. Variáveis e Escopo
-Uma **variável** é um espaço na memória para armazenar dados.
+---
 
-### Declaração e Diferenças
-* **var**: Escopo de função. Permite redeclaração e sofre *hoisting*. (Evite!)
-* **let**: Escopo de bloco. Permite reatribuição. (Padrão moderno)
-* **const**: Escopo de bloco. **Não** permite reatribuição.
+## 🌟 Introdução
 
+O **JavaScript (JS)** é uma linguagem de programação de alto nível que dá vida às páginas web. 
+- **O que faz:** Enquanto o HTML estrutura e o CSS estiliza, o JS cria a lógica (o que acontece quando clico aqui? como valido esse dado?).
+- **Relação:** Imagine um carro. O HTML é o chassi, o CSS é a pintura e o JavaScript é o motor e o painel de controle.
 
+---
 
-### Exemplos de Código
-```javascript
-// Exemplo com var
-var sistema = "Windows"; 
+## 🌟 Introdução
+O **JavaScript** é a linguagem que traz interatividade para a web.
+- **Função:** Enquanto o HTML estrutura e o CSS embeleza, o JS controla o comportamento.
+- **Exemplo:** Validar se um e-mail é válido antes de enviar um formulário.
 
-// Exemplo com let
-let usuario = "Ana";
-usuario = "Beatriz"; // OK!
+---
 
-// Exemplo com const
-const versao = 1.0;
-// versao = 1.1; // Erro: Assignment to constant variable.
+## 🔌 Formas de Uso
+Existem duas formas principais de integrar o JS ao HTML:
+1. **Interno:** O código fica direto na tag `<script>` (Pasta `01`).
+2. **Externo:** O código fica em um arquivo `.js` separado (Pasta `02`).
+*O uso externo é preferível para manter o código limpo e reutilizável.*
 
-// --- TESTE DE ESCOPO ---
+---
 
-// 1. Variável acessível fora do bloco (var não respeita bloco)
-if (true) {
-    var globalizada = "Eu escapo do IF";
-}
-console.log(globalizada); // "Eu escapo do IF"
+## 📦 Variáveis e Escopo
+Aprendi a diferença crucial entre as formas de declarar variáveis:
 
-// 2. Variável NÃO acessível fora do bloco (let/const respeitam o bloco)
-if (true) {
-    let protegida = "Estou presa";
-}
+- **var:** Escopo global/função (pode causar bugs por "vazar" de blocos).
+- **let:** Escopo de bloco (mais seguro, recomendado para valores que mudam).
+- **const:** Escopo de bloco (para valores que nunca mudam).
 
-// console.log(protegida); 
-// EXPLICAÇÃO: O erro "ReferenceError: protegida is not defined" ocorre porque 
-// variáveis declaradas com 'let' dentro de chas { } morrem quando o bloco fecha.
+> **Nota sobre Escopo:** No exemplo da pasta `03`, demonstrei que uma variável `let` criada dentro de um `if` não pode ser acessada fora dele, gerando um erro proposital para fins de aprendizado.
+
+---
+
+## ⚖️ Operadores e Comparações
+Uma das regras de ouro do JS é a comparação estrita:
+
+- `5 == "5"`: Retorna **true** (compara apenas o valor).
+- `5 === "5"`: Retorna **false** (compara valor e o tipo de dado).
+
+**Por que usar `===`?** Ele evita erros silenciosos onde o JS tenta converter tipos de forma automática, garantindo que "5" (texto) não seja tratado como 5 (número).
+
+---
+
+## 🔄 Estruturas de Controle
+- **Condicionais:** Usei `if/else` para decisões simples e `switch` para múltiplas opções (Ex: menu de opções).
+- **Repetição:** Usei `for` para contagens exatas e `while` para repetições baseadas em uma condição.
+*(Veja pastas `05` e `06`)*
+
+---
+
+## ⚙️ Funções
+As funções são blocos de código que executam tarefas. No projeto, demonstrei:
+- Funções simples (sem parâmetros).
+- Funções com parâmetros (recebem dados).
+- Funções com **retorno** (devolvem um resultado).
+
+---
+
+## 🖱️ Manipulação do DOM
+O ponto alto do JS é controlar o HTML. Nesta seção usei:
+- `document.getElementById()` e `querySelector()` para achar elementos.
+- `.addEventListener()` para reagir a cliques.
+- `.style` e `classList` para mudar o design dinamicamente.
+
+### 📸 Exemplo de Funcionamento:
+![Print do DOM](print_dom.png)
+*Pasta: `08_manipulacao_dom/`*
+
+---
+
+## 📚 Referências
+
+MDN Web Docs. **JavaScript**. 2026. Disponível em: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript. Acesso em: 30 mar. 2026.
+
+W3SCHOOLS. **JavaScript Tutorial**. 2026. Disponível em: https://www.w3schools.com/js/. Acesso em: 30 mar. 2026.
+
+ECMA INTERNATIONAL. **ECMAScript® 2026 Language Specification**. 2026. Disponível em: https://www.ecma-international.org/publications-and-standards/ecma-262/. Acesso em: 31 mar. 2026.
+
+SILVA, Gustavo Guanabara. **Curso de JavaScript**. YouTube, 2026. Disponível em: https://www.youtube.com/c/CursoemVídeo. Acesso em: 31 mar. 2026.
