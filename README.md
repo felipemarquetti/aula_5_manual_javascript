@@ -1,4 +1,4 @@
-# 🚀 Manual Prático de JavaScript: Do Zero à Manipulação do DOM
+# 🚀 Manual Prático de JavaScript
 
 Bem-vindo ao meu repositório de estudos! Este guia foi criado para documentar meu aprendizado sobre JavaScript, explicando desde conceitos básicos até a interação com o navegador.
 
@@ -13,14 +13,6 @@ Bem-vindo ao meu repositório de estudos! Este guia foi criado para documentar m
 6. [Estruturas de Repetição](#-estruturas-repeticao)
 7. [Funções](#-funcoes)
 8. [Manipulação do DOM](#-manipulacao-dom)
-
----
-
-## 🌟 Introdução
-
-O **JavaScript (JS)** é uma linguagem de programação de alto nível que dá vida às páginas web. 
-- **O que faz:** Enquanto o HTML estrutura e o CSS estiliza, o JS cria a lógica (o que acontece quando clico aqui? como valido esse dado?).
-- **Relação:** Imagine um carro. O HTML é o chassi, o CSS é a pintura e o JavaScript é o motor e o painel de controle.
 
 ---
 
